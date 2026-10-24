@@ -1,3 +1,5 @@
+import './fonts.css'
+
 const MAX_BOUNCE_ANGLE: number = Math.PI / 3
 const ROWS = 4
 const COLS = 8
@@ -195,13 +197,13 @@ function draw(ctx: CanvasRenderingContext2D, game: Game): void {
         ctx.strokeRect(15, 15, ctx.canvas.width - 30, ctx.canvas.height- 30)
 
         ctx.fillStyle = 'yellow'
-        ctx.font = '35px cursive'
+        ctx.font = '35px Z003, Lucida Calligraphy, cursive'
         ctx.textAlign = 'center'
         ctx.fillText('Brick-Break', ctx.canvas.width / 2, 80)
 
         if (game.state === 'start') {
             ctx.fillStyle = 'white'
-            ctx.font = '20px cursive'
+            ctx.font = '20px Z003, Lucida Calligraphy, cursive'
             ctx.textAlign = 'center'
             ctx.fillText('Press Enter to play', ctx.canvas.width / 2, ctx.canvas.height / 2)
         }
@@ -213,13 +215,13 @@ function draw(ctx: CanvasRenderingContext2D, game: Game): void {
             ctx.fillText(`You ${game.state}`, ctx.canvas.width / 2, ctx.canvas.height / 2)
 
             ctx.fillStyle = 'white'
-            ctx.font = '12px cursive'
+            ctx.font = '12px Z003, Lucida Calligraphy, cursive'
             ctx.textAlign = 'center'
             ctx.fillText(`Press Enter to restart`, ctx.canvas.width / 2, ctx.canvas.height / 2 + 20)
 
             
             ctx.fillStyle = 'cyan'
-            ctx.font = '30px cursive'
+            ctx.font = '30px Z003, Lucida Calligraphy, cursive'
             ctx.textAlign = 'center'
             ctx.fillText(`Your Score: ${game.score}`, ctx.canvas.width / 2, ctx.canvas.height - 80)
             
