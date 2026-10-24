@@ -57,8 +57,8 @@ function clamp(value: number, min: number, max: number): number {
 
 function createBall(canvasWidth: number, canvasHeight: number): Ball {
     const ball: Ball = {                 // ball values
-        x: canvasWidth / 2,
-        y: canvasHeight / 2,
+        x: canvasWidth / 2 - 40,
+        y: canvasHeight - 30,
         radius: 8,
         dx: 250,
         dy: -250
